@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript"src="jquery-3.1.0.js"></script>
+	<script type="text/javascript">
+		$(Document).ready(function(){
+			/*$("button").click(function(){
+				$("p").toggle();
+			$("#hide").click(function(){
+				$("p").hide(10000);
+			});
+			$("#show").click(function(){
+				$("p").show(5000);
+				// $("p").css("background-color","red");
+			});
+			});*/
+			$("#animate").click(function(){
+				/*$("h2").fadeToggle();
+				$("p").fadeToggle(1000);*/
+				// $("h2").slideToggle();
+				// $("p").slideToggle(5000);
+				// $("p").fadeToggle(3000);
+				$("div").animate({
+					left:'250px',
+					opacity:'0.5',
+					height:'+=150px',
+					width:'+=150px',
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+    <button id="animate" type="button">click me</button>
+	<h2>this is a heading</h2>
+	<p>this is a paragraph.</p>
+	<p>this is another paragraph.</p>
+	<div style="background:#98bf21;height:100px;width:100px;position:absolute;">hi world;</div>
+	<br>
+	<!-- <button id="hide" type="button">hide me</button>
+	<button id="show" type="button">show me</button> -->
+	<!-- <button id="fade" type="button">fade me</button> -->
+	
+</body>
+</html>
